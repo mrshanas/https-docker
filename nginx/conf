@@ -12,7 +12,7 @@ server {
     }
 
     location / {
-        return 301 https://example.org$request_uri;
+        return 301 https://test.mrshanas.com$request_uri;
     }
 }
 
@@ -23,7 +23,7 @@ server {
 
     server_name test.mrshanas.com;
 
-    location /{
+    location / {
         # ...
     }
 }
