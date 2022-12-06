@@ -1,6 +1,5 @@
 server {
     listen 80;
-
     listen [::]:80;
 
     server_name test.mrshanas.com;
@@ -12,7 +11,7 @@ server {
     }
 
     location / {
-        return 301 https://test.mrshanas.com$request_uri;
+        return 301 https://$host$request_uri;
     }
 }
 
@@ -24,6 +23,5 @@ server {
     server_name test.mrshanas.com;
 
     location / {
-        # ...
     }
 }
