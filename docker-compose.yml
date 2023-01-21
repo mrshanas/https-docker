@@ -23,7 +23,7 @@ services:
     entrypoint: ""
     volumes:
       - "/etc/letsencrypt:/etc/letsencrypt"
-      - "/tmp/acme-challenge:/tmp/acme-challenge"
+      - "/tmp/acme_challenge:/tmp/acme_challenge"
     environment:
       - TERM=xterm
 
